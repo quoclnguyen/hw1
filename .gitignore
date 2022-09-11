@@ -1,0 +1,6 @@
+.clang-format
+.clang-tidy
+a.out
+split
+split.o
+ulliststr_test
