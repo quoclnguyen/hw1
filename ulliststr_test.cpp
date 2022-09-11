@@ -41,5 +41,7 @@ int main(int argc, char* argv[])
   test1.set(0,str1);
   test1.set(10,str1);
   //Breakpoint 6, head: 1123451234, tail: 1
+  cout << test1.size() << endl;
+  //Breakpoint 7, should return 11;
   return 0;
 }
