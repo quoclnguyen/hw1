@@ -79,7 +79,7 @@ void ULListStr::pop_back(){
     tail_->val[(tail_ ->last)-1] = "";
     --(tail_->last);
   }
-  if (tail_ ->last ==0){
+  else if (tail_ ->last ==0){
     Item* temp = tail_->prev;
     delete tail_;
     tail_ = temp;
