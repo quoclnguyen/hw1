@@ -17,12 +17,15 @@ the function below should be the only one in this file.
 
 void split(Node*& in, Node*& odds, Node*& evens)
 {
-  if(in==NULL){
-    odds->next = NULL;
-    evens ->next =NULL;
-    return;}
 
-  if (((in->value) %2) !=0){ //odd
+  if((in==NULL)){
+    if (!(odds==NULL|| evens ==NULL)){
+      odds->next = NULL;
+      evens->next  =NULL;
+    }
+    return;
+  }
+  else if (((in->value) %2) !=0){ //odd
     if( odds == NULL ){
       odds = in; //should work as they're both pointers?
       odds -> value = in ->value;
